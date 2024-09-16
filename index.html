@@ -5,6 +5,124 @@
     <link rel="icon" href="res/images/favicon.ico">
     <title>My Dashboard</title>
   </head>
+  <style>
+    table{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse:collapse;
+        
+    }
+    td, th{
+        text-align: left;
+        padding: 7px;
+        border:0.5px solid black; 
+        
+    }
+    tr{
+        border: 1px solid black;    
+    }
+  </style>
   <body>
-  </body>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+    </header>
+    <section>
+        <div>
+            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+        </div>
+        <div>
+            <ul>
+                <li>Your name</li>
+                <li> A date following this format dd/mm/yyyy</li>
+                <li> Software Engineering </li>
+            </ul>
+        </div>
+        <div>
+            <strong>2.65</strong>
+        </div>
+    </section>
+    <section>
+        <h1>Courses</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Course Title</th>
+                <th>Semester</th>
+                <th>Grade</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    <li>
+                    <a href="https://courses.cs.ut.ee/2024/ASD/fall"target="_blank">Agile software development</a>
+                    </li>
+                </td>
+                <td>fall</td>
+                <td>82</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                <li>
+                    <a href="https://courses.cs.ut.ee/2024/systemsmodelling/fall"target="_blank">Systems modelling</a>
+                </li>
+                </td>
+                <td>fall</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <li>
+                        <a href="https://courses.cs.ut.ee/2024/RE/fall"target="_blank">Requirements Engineering</a>
+                    </li>
+                </td>
+                <td>fall</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    <li>
+                        <a href="https://courses.cs.ut.ee/2021/HCI/spring"target="_blank">Human Computer Interaction</a>
+                    </li>
+                </td>
+                <td>fall</td>
+                <td>65</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
+            </li>
+            <li>
+                <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
+            </li>
+        </ul>
+    </footer>  
+    <section>
+        <h1>
+            Add New Course
+        </h1>
+        <form action="#">
+            <label for="courseTitle">Course Title:</label>
+            <input type="text" id="courseTitle" name="courseTitle" required><br></br>
+            <label for="semester">Semester</label>
+            <select id="semester" name="semester">
+                <option value="Fall">Fall</option>
+                <option value="Spring">Spring</option>
+            </select>
+            
+            <h3>
+            <label for="Attendance">Attendance</label>
+            </h3>
+            
+        </form>
+    </section>
+</body>
 </html>
